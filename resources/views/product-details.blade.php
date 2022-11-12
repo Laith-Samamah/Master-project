@@ -1,55 +1,15 @@
 @extends('master')
+@section('title', 'Product' )
 @section('content')
+    
+
 <body class="template-product-detail-classic sticky-view-product">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
-                <!-- Start YMM Box -->
-                <div class="ymm-search-box horizontal">
-                    <div class="container">
-                        <form action="#" class="row ymm-search d-flex align-items-center">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-2">
-                                <h1 class="mb-lg-0">Shop By Parts</h1>
-                                <p class="d-none">Quick & Easy Shop by Parts</p>
-                            </div>
-                            <div class="form-group col-12 col-sm-4 col-md-3 col-lg-3">
-                                <select class="select2 form-control" id="sel1" name="sellist1">
-                                    <option value="" disabled selected>Select Year</option>
-                                    <option value="1">2019</option>
-                                    <option value="2">2018</option>
-                                    <option value="3">2017</option>
-                                    <option value="3">2016</option>
-                                    <option value="3">2015</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12 col-sm-4 col-md-3 col-lg-3">
-                                <select class="select2 form-control" id="sel2" name="sellist2">
-                                    <option value="" disabled selected>Select Make</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">Ford</option>
-                                    <option value="3">Hyundai</option>
-                                    <option value="3">TATA</option>
-                                    <option value="3">Volvo</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12 col-sm-4 col-md-3 col-lg-3">
-                                <select class="select2 form-control" id="sel3" name="sellist3">
-                                    <option value="" disabled selected>Select Model</option>
-                                    <option value="1">Ford Pinto</option>
-                                    <option value="2">Honda Fitta</option>
-                                    <option value="3">Hyundai Santa Fe</option>
-                                    <option value="3">Mazda Moco</option>
-                                    <option value="3">Skoda Laura</option>
-                                </select>
-                            </div>
-                            <div class="actions-btn col-12 col-sm-12 col-md-3 col-lg-1">
-                                <button class="btn btn-primary w-md-100">Find</button>
-                                <button class="btn btn-secondary w-50 d-none">Reset</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- Start YMM Box -->
+
 
                 <!-- Start Breadcrumb -->
                 <div class="breadcrumbs classic-breadcrumbs text-left">
@@ -73,11 +33,11 @@
                                 <div class="verticle-thumb-product d-flex pro-verticle-items clearfix">
                                     <!-- Start Product Thumb Images -->
                                     <div class="product-thumb slider thumbnail-vertical-items">
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-125x125.jpg" data-src="assets/images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-125x125.jpg" data-src="assets/images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-125x125.jpg" data-src="assets/images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-125x125.jpg" data-src="assets/images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-125x125.jpg" data-src="assets/images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
                                     </div>
                                     <!-- End Product Thumb Images -->
 
@@ -92,19 +52,19 @@
                                         <!-- Start Product Single Images -->
                                         <div class="product-single-photo slider thumbnails-vertical-single">
                                             <div class="single-item zoom product-gallery-image">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-800x800.jpg" data-src="assets/images/products/product-detail-800x800.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-detail-800x800.jpg" data-src="images/products/product-detail-800x800.jpg" alt="image" title="image" />
                                             </div>
                                             <div class="single-item zoom product-gallery-image">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-800x800.jpg" data-src="assets/images/products/product-detail-800x800.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-detail-800x800.jpg" data-src="images/products/product-detail-800x800.jpg" alt="image" title="image" />
                                             </div>
                                             <div class="single-item zoom product-gallery-image">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-800x800.jpg" data-src="assets/images/products/product-detail-800x800.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-detail-800x800.jpg" data-src="images/products/product-detail-800x800.jpg" alt="image" title="image" />
                                             </div>
                                             <div class="single-item zoom product-gallery-image">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-800x800.jpg" data-src="assets/images/products/product-detail-800x800.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-detail-800x800.jpg" data-src="images/products/product-detail-800x800.jpg" alt="image" title="image" />
                                             </div>
                                             <div class="single-item zoom product-gallery-image">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-detail-800x800.jpg" data-src="assets/images/products/product-detail-800x800.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-detail-800x800.jpg" data-src="images/products/product-detail-800x800.jpg" alt="image" title="image" />
                                             </div>
                                         </div>
                                         <!-- End Product Single Images -->
@@ -133,7 +93,7 @@
                                         <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                             <div class="info-area d-table clearfix">
                                                 <div class="info-icon d-table-cell align-middle">
-                                                    <img class="img-fluid blur-up lazyload" src="assets/images/icons/free-shipping.png" data-src="assets/images/icons/free-shipping.png" alt="image" title="image" />
+                                                    <img class="img-fluid blur-up lazyload" src="images/icons/free-shipping.png" data-src="images/icons/free-shipping.png" alt="image" title="image" />
                                                 </div>
                                                 <div class="info-details d-table-cell align-middle">
                                                     <h5>Free &amp; Fast Shipping</h5>
@@ -144,7 +104,7 @@
                                         <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                             <div class="info-area d-table">
                                                 <div class="info-icon d-table-cell align-middle">
-                                                    <img class="img-fluid blur-up lazyload" src="assets/images/icons/safe-payment.png" data-src="assets/images/icons/safe-payment.png" alt="image" title="image" />
+                                                    <img class="img-fluid blur-up lazyload" src="images/icons/safe-payment.png" data-src="images/icons/safe-payment.png" alt="image" title="image" />
                                                 </div>
                                                 <div class="info-details d-table-cell align-middle">
                                                     <h5>Safe Payment</h5>
@@ -157,7 +117,7 @@
                                         <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                             <div class="info-area d-table">
                                                 <div class="info-icon d-table-cell align-middle">
-                                                    <img class="img-fluid blur-up lazyload" src="assets/images/icons/return-exchange.png" data-src="assets/images/icons/return-exchange.png" alt="image" title="image" />
+                                                    <img class="img-fluid blur-up lazyload" src="images/icons/return-exchange.png" data-src="images/icons/return-exchange.png" alt="image" title="image" />
                                                 </div>
                                                 <div class="info-details d-table-cell align-middle">
                                                     <h5>Return &amp; Exchange</h5>
@@ -168,7 +128,7 @@
                                         <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                             <div class="info-area d-table">
                                                 <div class="info-icon d-table-cell align-middle">
-                                                    <img class="img-fluid blur-up lazyload" src="assets/images/icons/support-24.png" data-src="assets/images/icons/support-24.png" alt="image" title="image" />
+                                                    <img class="img-fluid blur-up lazyload" src="images/icons/support-24.png" data-src="images/icons/support-24.png" alt="image" title="image" />
                                                 </div>
                                                 <div class="info-details d-table-cell align-middle">
                                                     <h5>Support 24/7</h5>
@@ -249,11 +209,11 @@
                                 <div class="product-color">
                                     <p class="mb-2">Color:  <b>RED</b></p>
                                     <ul class="d-flex flex-row align-items-center color-item" data-toggle="buttons">
-                                        <li class="btn black active" data-toggle="tooltip" data-placement="top" title="black"><img class="img-fluid" src="assets/images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                        <li class="btn navy" data-toggle="tooltip" data-placement="top" title="navy"><img class="img-fluid" src="assets/images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                        <li class="btn light-blue" data-toggle="tooltip" data-placement="top" title="light-blue"><img class="img-fluid" src="assets/images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                        <li class="btn green" data-toggle="tooltip" data-placement="top" title="green"><img class="img-fluid" src="assets/images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                        <li class="btn yellow" data-toggle="tooltip" data-placement="top" title="yellow"><img class="img-fluid" src="assets/images/products/product-swatch-50x50.jpg" alt="image" /></li>
+                                        <li class="btn black active" data-toggle="tooltip" data-placement="top" title="black"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
+                                        <li class="btn navy" data-toggle="tooltip" data-placement="top" title="navy"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
+                                        <li class="btn light-blue" data-toggle="tooltip" data-placement="top" title="light-blue"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
+                                        <li class="btn green" data-toggle="tooltip" data-placement="top" title="green"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
+                                        <li class="btn yellow" data-toggle="tooltip" data-placement="top" title="yellow"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
                                     </ul>
                                 </div>
                                 <!-- End Product Color -->
@@ -366,7 +326,7 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="col-12 col-sm-6 col-md-6 text-center size-chart-img">
-                                                                    <img class="img-fluid blur-up lazyload" src="assets/images/others/size-chart.png" data-src="assets/images/others/size-chart.png" alt="image" title="image" />
+                                                                    <img class="img-fluid blur-up lazyload" src="images/others/size-chart.png" data-src="images/others/size-chart.png" alt="image" title="image" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -435,7 +395,7 @@
                                 <div class="checkout-safe">
                                     <fieldset>
                                         <legend>Guaranteed Safe Checkout</legend>
-                                        <img class="img-fluid" src="assets/images/icons/checkout-icon.png" alt="Guaranteed Safe Checkout" title="Guaranteed Safe Checkout" />
+                                        <img class="img-fluid" src="images/icons/checkout-icon.png" alt="Guaranteed Safe Checkout" title="Guaranteed Safe Checkout" />
                                     </fieldset>
                                 </div>
                                 <!-- Start Product Checkout Info -->
@@ -481,10 +441,10 @@
                                         <div class="product-info-img">
                                             <div class="row">
                                                 <div class="col-12 col-sm-6 col-md-6">
-                                                    <img class="img-fluid blur-up lazyload" src="assets/images/others/product-details1.jpg" data-src="assets/images/others/product-details1.jpg" alt="image" title="image" />
+                                                    <img class="img-fluid blur-up lazyload" src="images/others/product-details1.jpg" data-src="images/others/product-details1.jpg" alt="image" title="image" />
                                                 </div>
                                                 <div class="col-12 col-sm-6 col-md-6">
-                                                    <img class="img-fluid blur-up lazyload" src="assets/images/others/product-details1.jpg" data-src="assets/images/others/product-details1.jpg" alt="image" title="image" />
+                                                    <img class="img-fluid blur-up lazyload" src="images/others/product-details1.jpg" data-src="images/others/product-details1.jpg" alt="image" title="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -670,7 +630,7 @@
                                                 </table>
                                             </div>
                                             <div class="col-12 col-sm-6 col-md-6 text-center size-chart-img">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/others/size-chart.png" data-src="assets/images/others/size-chart.png" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/others/size-chart.png" data-src="images/others/size-chart.png" alt="image" title="image" />
                                             </div>
                                         </div>
                                     </div>
@@ -739,8 +699,8 @@
                                         </div>
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload primary-img" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover secondary-img" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload primary-img" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover secondary-img" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -777,8 +737,8 @@
                                         </div>
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -815,8 +775,8 @@
                                         </div>
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -852,8 +812,8 @@
                                         </div>
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -887,8 +847,8 @@
                                     <div class="product-image-action">
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -934,8 +894,8 @@
                                     <div class="product-image-action">
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -971,8 +931,8 @@
                                         </div>
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -1006,8 +966,8 @@
                                     <div class="product-image-action">
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -1040,8 +1000,8 @@
                                     <div class="product-image-action">
                                         <div class="product-image">
                                             <a href="product-details.html">
-                                                <img class="img-fluid blur-up lazyload" src="assets/images/products/product-1.jpg" data-src="assets/images/products/product-1.jpg" alt="image" title="image" />
-                                                <img class="img-fluid blur-up lazyload product-imghover" src="assets/images/products/product-1-1.jpg" data-src="assets/images/products/product-1-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
+                                                <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
                                             </a>
                                         </div>
                                         <div class="product-action">
@@ -1075,4 +1035,7 @@
                 <!-- End Recently Viewed Product -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection

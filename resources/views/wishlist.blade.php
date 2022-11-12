@@ -1,6 +1,11 @@
 @extends('master')
+@section('title', 'Wishlist' )
 @section('content')
+    
+
 <body class="template-wishlist-page">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -33,7 +38,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
+                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
                                         <td class="pro-del text-center text-sm-left">
                                             <p class="mb-1 pro-name"><a href="product-details.html">Donec pede justo fringilla</a></p>
                                             <p class="mb-1">Size: Small</p>
@@ -45,7 +50,7 @@
                                         <td class="remove-wish text-center"><a class="wish-remove" href="#"><i class="ti-close"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
+                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
                                         <td class="pro-del text-center text-sm-left">
                                             <p class="mb-1 pro-name"><a href="product-details.html">Aenean commodo ligula eget dolor</a></p>
                                             <p class="mb-1">Color: Black</p>
@@ -56,7 +61,7 @@
                                         <td class="remove-wish text-center"><a class="wish-remove" href="#"><i class="ti-close"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
+                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
                                         <td class="pro-del text-center text-sm-left">
                                             <p class="mb-1 pro-name"><a href="product-details.html">Sociosqu facilisi senectus</a></p>
                                             <p class="mb-1">Size: Large</p>
@@ -67,7 +72,7 @@
                                         <td class="remove-wish text-center"><a class="wish-remove" href="#"><i class="ti-close"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
+                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
                                         <td class="pro-del text-center text-sm-left">
                                             <p class="mb-1 pro-name"><a href="product-details.html">Nullam scelerisque suscipit sociis</a></p>
                                             <p class="mb-1">Size: Large</p>
@@ -79,7 +84,7 @@
                                         <td class="remove-wish text-center"><a class="wish-remove" href="#"><i class="ti-close"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
+                                        <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
                                         <td class="pro-del text-center text-sm-left">
                                             <p class="mb-1 pro-name"><a href="product-details.html">Consectetur adipisicing elit</a></p>
                                             <p class="mb-1">Size: Small</p>
@@ -97,4 +102,7 @@
                 <!-- End Wishlist content -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection

@@ -17,12 +17,12 @@
                                 <a href="#" class="closeNav-btn d-lg-none clearfix" id="closeNav" title="Close"><span class="menu-close mr-2">Close</span><i class="ti-close" aria-hidden="true"></i></a>
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="index.html">Home<span ></span></a>  
+                                        <a class="nav-link" href="/">Home<span ></span></a>  
                                         <!-- Start Megamenu Dropdown -->
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./shop-grid.html">Shop
+                                        <a class="nav-link" href="/shop">Shop
                                             <span class="arw plush" title="Click to show/hide"></span>
                                         </a>  
                                         <!-- Start Megamenu Style 2 -->
@@ -63,10 +63,10 @@
                                         <!-- End Megamenu Style 2 -->
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about-us.html">About Us</a>  
+                                        <a class="nav-link" href="/about">About Us</a>  
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact-us.html">Contact Us</a>  
+                                        <a class="nav-link" href="/contact">Contact Us</a>  
                                     </li>
                                 </ul>
                             </div>
@@ -74,7 +74,7 @@
                         <!-- End Navigation -->
                         <!-- Start Logo -->
                         <div class="navbar-brand logo mx-auto p-0 text-center">
-                            <a href="index.html" class="logo-img"><img class="img-fluid" src="images/logo/logo.png" alt="logo" title="Posh Auto Parts" /></a>
+                            <a href="index.html" class="logo-img"><img class="img-fluid" src="images/logo/sparklogo.png" alt="logo" title="Auto Parts" /></a>
                         </div>
                         <!-- End Logo -->
                         <!-- Start Right Menu -->

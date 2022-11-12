@@ -1,6 +1,11 @@
 @extends('master')
+@section('title', 'Login' )
 @section('content')
+    
+
 <body class="template-login account-page">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -48,7 +53,7 @@
                                             <a class="forgot-password ml-4" href="forgot-password.html">Forgot your password?</a>
                                         </div>
                                         <div class="account-create pull-right">
-                                            <a class="btn btn-secondary" href="register.html">Create An Acoount</a>
+                                            <a class="btn btn-secondary" href="/register">Create An Acoount</a>
                                         </div>
                                     </div>
                                 </form>
@@ -59,4 +64,7 @@
                 <!-- End Login Account -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection

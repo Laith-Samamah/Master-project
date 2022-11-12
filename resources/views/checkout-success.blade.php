@@ -1,6 +1,11 @@
 @extends('master')
+@section('title', 'Successful checkout' )
 @section('content')
+    
+
 <body class="template-checkout-success">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -11,7 +16,7 @@
                         <div class="row row-sp">
                             <div class="col-sp col-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="checkout-success-banner">
-                                    <img class="img-fluid" src="assets/images/others/checkout-success-banner.jpg" alt="Checkout Success Banner" title="Checkout Success Banner" />
+                                    <img class="img-fluid" src="images/others/checkout-success-banner.jpg" alt="Checkout Success Banner" title="Checkout Success Banner" />
                                 </div>
                             </div>
                         </div>
@@ -46,14 +51,14 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100"></a></td>
+                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100"></a></td>
                                                     <td class="pro-name text-center text-sm-left"><p class="mb-1"><a href="product-details.html">Waterproof Cigarette tiyer</a></p></td>
                                                     <td class="pro-price text-center">1</td>
                                                     <td class="pro-price text-center">$376.00</td>
                                                     <td class="pro-total text-center">$376.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100"></a></td>
+                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100"></a></td>
                                                     <td class="pro-name text-center text-sm-left"><p class="mb-1"><a href="product-details.html">Waterproof Cigarette tiyer</a></p></td>
                                                     <td class="pro-price text-center">1</td>
                                                     <td class="pro-price text-center">$376.00</td>
@@ -142,4 +147,7 @@
                 <!-- End Checkout Success -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection

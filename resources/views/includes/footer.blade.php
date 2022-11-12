@@ -5,7 +5,7 @@
                         <div class="row no-gutters">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-3 logo-wellcome">
                                 <div class="ftr-logo">
-                                    <a href="index.html"><img class="img-fluid" src="images/logo/gray-logo.png" alt="Posh Auto Parts" title="Posh Auto Parts" /></a>
+                                    <a href="index.html"><img class="img-fluid" src="images/logo/sparklogo.png" alt="Posh Auto Parts" title="Posh Auto Parts" /></a>
                                 </div>
                                 <div class="welcome-text">
                                     <p class="m-0">Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>

@@ -1,6 +1,11 @@
 @extends('master')
+@section('title', 'Checkout' )
 @section('content')
+    
+
 <body class="template-checkout">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -879,7 +884,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="pro-img text-center"><a href="#"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-60x60.jpg" data-src="assets/images/products/product-60x60.jpg" alt="image" title="image" width="60" /></a></td>
+                                                <td class="pro-img text-center"><a href="#"><img class="img-fluid blur-up lazyload" src="images/products/product-60x60.jpg" data-src="images/products/product-60x60.jpg" alt="image" title="image" width="60" /></a></td>
                                                 <td class="pro-del text-left">
                                                     <p class="mb-1 pro-name">Donec pede justo fringilla</p>
                                                     <p class="mb-1">Quantity: 2</p>
@@ -887,7 +892,7 @@
                                                 <td class="pro-price text-center">$376.00</td>
                                             </tr>
                                             <tr>
-                                                <td class="pro-img text-center"><a href="#"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-60x60.jpg" data-src="assets/images/products/product-60x60.jpg" alt="image" title="image" width="60" /></a></td>
+                                                <td class="pro-img text-center"><a href="#"><img class="img-fluid blur-up lazyload" src="images/products/product-60x60.jpg" data-src="images/products/product-60x60.jpg" alt="image" title="image" width="60" /></a></td>
                                                 <td class="pro-del text-left">
                                                     <p class="mb-1 pro-name">Aenean commodo ligula</p>
                                                     <p class="mb-1">Quantity: 6</p>
@@ -895,7 +900,7 @@
                                                 <td class="pro-price text-center">$70.15</td>
                                             </tr>
                                             <tr>
-                                                <td class="pro-img text-center"><a href="#"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-60x60.jpg" data-src="assets/images/products/product-60x60.jpg" alt="image" title="image" width="60" /></a></td>
+                                                <td class="pro-img text-center"><a href="#"><img class="img-fluid blur-up lazyload" src="images/products/product-60x60.jpg" data-src="images/products/product-60x60.jpg" alt="image" title="image" width="60" /></a></td>
                                                 <td class="pro-del text-left">
                                                     <p class="mb-1 pro-name">Sociosqu facilisi senectus</p>
                                                     <p class="mb-1">Quantity: 2</p>
@@ -1048,4 +1053,7 @@
                 <!-- End checkout -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection

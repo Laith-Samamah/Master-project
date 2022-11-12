@@ -1,6 +1,11 @@
 @extends('master')
+@section('title', 'Contact' )
 @section('content')
+    
+
 <body class="template-contact-us account-page">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -26,15 +31,15 @@
                                     <div class="contact-block d-flex flex-column justify-content-center text-center">
                                         <i class="icon ti-location-pin" aria-hidden="true"></i>
                                         <h4>Address</h4>
-                                        <p class="mb-0"><b>Store Name Pvt. Ltd</b><br>415 Water St, New York, NY 10002, USA.</p>
+                                        <p class="mb-0"><b>Jordan, Zarqa</b><br>New Zarqa - Al Karamah st.</p>
                                     </div>
                                 </div>
 
                                 <div class="col-sp col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                                     <div class="contact-block d-flex flex-column justify-content-center text-center">
                                         <i class="icon ti-alarm-clock" aria-hidden="true"></i> 
-                                        <h4>Opening Hours</h4>
-                                        <p class="mb-0"><b>Monday to Saturday: </b>9am - 10pm <br><b>Sundays</b>: 10am - 6pm</p>
+                                        <h4>Delivery Days</h4>
+                                        <p class="mb-0"><b>Saturday to Thursday</b></p>
                                     </div>
                                 </div>
 
@@ -42,15 +47,15 @@
                                     <div class="contact-block d-flex flex-column justify-content-center text-center">
                                         <i class="icon ti-email" aria-hidden="true"></i> 
                                         <h4>Email</h4>
-                                        <p class="mb-0"><a href="mailto:email@example.com">email@example.com</a></p>
+                                        <p class="mb-0"><a href="mailto:email@example.com">info@sparkparts.com</a></p>
                                     </div>
                                 </div>
 
                                 <div class="col-sp col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                                     <div class="contact-block d-flex flex-column justify-content-center text-center">
                                         <i class="icon ti-mobile" aria-hidden="true"></i> 
-                                        <h4>Toll-free</h4>
-                                        <p class="mb-0"><a href="tel:(+11)1234567895">(+01) 123 456 7890</a></p>
+                                        <h4>Phone number</h4>
+                                        <p class="mb-0"><a href="tel:(+11)1234567895">(+962) 778082198</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +100,7 @@
                                 </div>
                                 <div class="form-group mailsendbtn button-action mt-1 mt-sm-3 clearfix">	
                                     <input class="account-create btn btn-secondary" type="submit" name="contactus" value="Send" />
-                                    <div class="loading"><img class="img-fluid" src="assets/images/ajax-loader.gif" alt="loading"></div>
+                                    <div class="loading"><img class="img-fluid" src="images/ajax-loader.gif" alt="loading"></div>
                                 </div>
                             </form>
                         </div>
@@ -115,4 +120,7 @@
                 <!-- End Contact Us -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection

@@ -1,6 +1,11 @@
 @extends('master')
+@section('title', 'Cart' )
 @section('content')
+    
+
 <body class="template-cart-v2 cart-page">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -45,7 +50,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
+                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
                                                     <td class="pro-del text-center text-sm-left">
                                                         <p class="mb-1 pro-name"><a href="product-details.html">Donec pede justo fringilla</a></p>
                                                         <p class="mb-1">Size: Small</p>
@@ -63,7 +68,7 @@
                                                     <td class="pro-total text-center">$376.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
+                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
                                                     <td class="pro-del text-center text-sm-left">
                                                         <p class="mb-1 pro-name"><a href="product-details.html">Aenean commodo ligula eget dolor</a></p>
                                                         <p class="mb-1">Color: Black</p>
@@ -80,7 +85,7 @@
                                                     <td class="pro-total text-center">$70.15</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="assets/images/products/product-100x100.jpg" data-src="assets/images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
+                                                    <td class="pro-img text-center"><a href="product-details.html"><img class="img-fluid blur-up lazyload" src="images/products/product-100x100.jpg" data-src="images/products/product-100x100.jpg" alt="image" title="image" width="100" /></a></td>
                                                     <td class="pro-del text-center text-sm-left">
                                                         <p class="mb-1 pro-name"><a href="product-details.html">Sociosqu facilisi senectus</a></p>
                                                         <p class="mb-1">Size: Large</p>
@@ -481,10 +486,10 @@
                                     <!-- Start Checkout Card -->
                                     <div class="checkout-card">
                                         <div class="ssl-safe clearfix mb-3">
-                                            <img class="img-fluid blur-up lazyload float-left" src="assets/images/others/ssl-certificate.png" alt="image" title="Secure SSL certificate" />
-                                            <img class="img-fluid blur-up lazyload float-left" src="assets/images/others/safe-checkout.png" alt="image" title="Granted safe checkout" />
+                                            <img class="img-fluid blur-up lazyload float-left" src="images/others/ssl-certificate.png" alt="image" title="Secure SSL certificate" />
+                                            <img class="img-fluid blur-up lazyload float-left" src="images/others/safe-checkout.png" alt="image" title="Granted safe checkout" />
                                         </div>
-                                        <img class="img-fluid blur-up lazyload" src="assets/images/icons/checkout-card.png" alt="image" title="Checkout Card" />
+                                        <img class="img-fluid blur-up lazyload" src="images/icons/checkout-card.png" alt="image" title="Checkout Card" />
                                     </div>
                                     <!-- End Checkout Card -->
                                 </div>
@@ -496,4 +501,7 @@
                 <!-- End cart Content Inner -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection

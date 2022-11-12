@@ -1,6 +1,11 @@
 @extends('master')
+@section('title', 'Register' )
 @section('content')
+    
+
 <body class="template-register account-page">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -55,6 +60,9 @@
                                         <button type="submit" class="account-create btn btn-secondary">Create An Acoount</button>
                                     </div>
                                 </form>
+                                <div class="form-group button-action mt-1 mt-sm-5 clearfix text-center">
+                                   <a href="/login"> <button class="account-create btn btn-secondary">Already have an account? <b> Login here</b></button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,4 +70,7 @@
                 <!-- End Register Account -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection

@@ -1,6 +1,11 @@
 @extends('master')
+@section('title', 'Profile' )
 @section('content')
+    
+
 <body class="template-my-account account-page">
+
+@include('includes.navbar')
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -230,4 +235,7 @@
                 <!-- End My Account -->
             </main>
             <!-- End Main Content -->
+            
+@include('includes.footer')
+
 @endsection
