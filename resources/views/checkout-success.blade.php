@@ -13,13 +13,7 @@
                 <div class="checkout-success-content">
                     <div class="container">
 
-                        <div class="row row-sp">
-                            <div class="col-sp col-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="checkout-success-banner">
-                                    <img class="img-fluid" src="images/others/checkout-success-banner.jpg" alt="Checkout Success Banner" title="Checkout Success Banner" />
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div class="row row-sp">
                             <div class="col-sp col-12 col-sm-12 col-md-12 col-lg-6">
@@ -30,7 +24,7 @@
                                         <p class="card-text mb-1">Your order # is: <b>10000034</b>.</p>
                                         <p class="card-text mb-1">You will receive an order confirmation email with details of your order and a link to track its progress.</p>
                                         <p class="card-text mb-1">All necessary information about the delivery, we sent to your email</p>
-                                        <a href="index.html" class="btn btn-primary mt-4">Continue Shopping</a>
+                                        <a href="/" class="btn btn-primary mt-4">Continue Shopping</a>
                                     </div>
                                 </div>
                             </div>
@@ -112,16 +106,8 @@
 
                                     <div class="ship-info-details billing-payment-details">
                                         <div class="row">
-                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="shipping-details mb-4 mb-sm-0 clearfix">
-                                                    <h3>Billing Address</h3>
-                                                    <p>No 40 Baria Street 133/2,</p>
-                                                    <p>New York,</p>
-                                                    <p>USA</p>
-                                                    <p>00004-1988</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+
+                                            <div class="col-12 col-sm-6 col-md-6 col-lg-12">
                                                 <div class="billing-details clearfix">
                                                     <h3>Payment Method</h3>
                                                     <p>Check / Money order</p>
@@ -134,14 +120,7 @@
                             </div>
                         </div>
 
-                        <div class="row row-sp">
-                            <div class="col-sp col-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="checkout-static-block">
-                                    <h3>Custom Static block</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <!-- End Checkout Success -->

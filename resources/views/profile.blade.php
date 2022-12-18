@@ -24,25 +24,7 @@
                 <!-- Start My Account -->
                 <div class="my-account-content">
                     <div class="container">
-                        <div class="account-upper-info">
-                            <div class="row align-items-center justify-content-center row-eq-height no-gutters">
-                                <div class="info-item col-12 col-sm-12 col-md-3 col-lg-3">
-                                    <p class="mb-1">Hello <strong>Posh</strong></p>
-                                    <p class="mb-0">(not <strong>Posh</strong>? <a class="link-color" href="login.html">Log out</a>)</p>
-                                </div>
-                                <div class="info-item col-12 col-sm-12 col-md-4 col-lg-4">
-                                    <p class="mb-1">Need Assistance? Customer service at.</p>
-                                    <p class="mb-0"><a href="mailto:admin@example.com">admin@example.com</a></p>
-                                </div>
-                                <div class="info-item col-12 col-sm-12 col-md-3 col-lg-3">
-                                    <p class="mb-1">E-mail them at </p>
-                                    <p class="mb-0"><a href="mailto:support@example.com">support@example.com</a></p>
-                                </div>
-                                <div class="info-item col-12 col-sm-12 col-md-2 col-lg-2 text-md-center">
-                                    <a href="cart.html" class="view-cart link-color">View Cart</a>
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div class="account-inner-info">
                             <div class="row">
@@ -51,7 +33,6 @@
                                     <div class="nav flex-row flex-sm-nowrap flex-sm-column nav-pills" id="v-pills-tab" role="tablist">
                                         <a class="nav-link active" id="my-account-home-tab" data-toggle="pill" href="#my-account-home" role="tab" aria-controls="my-account-home" aria-selected="true">Dashboard</a>
                                         <a class="nav-link" id="my-account-order-tab" data-toggle="pill" href="#my-account-order" role="tab" aria-controls="my-account-order" aria-selected="false">Orders</a>
-                                        <a class="nav-link" id="my-account-downloads-tab" data-toggle="pill" href="#my-account-downloads" role="tab" aria-controls="my-account-downloads" aria-selected="false">Downloads</a>
                                         <a class="nav-link" id="my-account-address-tab" data-toggle="pill" href="#my-account-address" role="tab" aria-controls="my-account-address" aria-selected="false">Addresses</a>
                                         <a class="nav-link" id="my-account-details-tab" data-toggle="pill" href="#my-account-details" role="tab" aria-controls="my-account-details" aria-selected="false">Account Details</a>
                                         <a class="nav-link" href="login.html">Logout</a>
@@ -108,37 +89,7 @@
                                         </div>
                                         <!-- End Orders -->
 
-                                        <!-- Start Downloads -->
-                                        <div class="tab-pane fade" id="my-account-downloads" role="tabpanel" aria-labelledby="my-account-downloads-tab">
-                                            <h3>Downloads</h3>
-                                            <div class="downloads-table table-responsive">
-                                                <table class="table table-bordered text-center">
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="text-left">Product</th>
-                                                            <th>Downloads</th>
-                                                            <th>Expires</th>
-                                                            <th>Download</th>	 	 	 	
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="text-left">Autoparts - Ecommerce Bootstrap Template</td>
-                                                            <td>Feb 14, 2018</td>
-                                                            <td><span class="danger">Expired</span></td>
-                                                            <td><a href="#" class="link-color view">Click Here To Download Your File</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-left">Autoparts - Ecommerce Bootstrap Template</td>
-                                                            <td>May 21, 2018</td>
-                                                            <td>Never</td>
-                                                            <td><a href="#" class="link-color view">Click Here To Download Your File</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <!-- End Downloads -->
+
 
                                         <!-- Start Address -->
                                         <div class="tab-pane fade" id="my-account-address" role="tabpanel" aria-labelledby="my-account-address-tab">

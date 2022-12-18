@@ -33,21 +33,15 @@
                                 <div class="verticle-thumb-product d-flex pro-verticle-items clearfix">
                                     <!-- Start Product Thumb Images -->
                                     <div class="product-thumb slider thumbnail-vertical-items">
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
-                                        <div class="thumb-item"><img class="img-fluid blur-up lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid  lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid  lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid  lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid  lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
+                                        <div class="thumb-item"><img class="img-fluid  lazyload" src="images/products/product-detail-125x125.jpg" data-src="images/products/product-detail-125x125.jpg" alt="image" title="image" /></div>
                                     </div>
                                     <!-- End Product Thumb Images -->
 
                                     <div class="product-img-thumb pro-verticle-thumbnails">
-                                        <!-- Start Product Label -->
-                                        <div class="product-label">
-                                            <span class="label new">New</span>
-                                            <span class="label sale">Sale</span>
-                                        </div>
-                                        <!-- End Product Label -->
 
                                         <!-- Start Product Single Images -->
                                         <div class="product-single-photo slider thumbnails-vertical-single">
@@ -70,75 +64,16 @@
                                         <!-- End Product Single Images -->
 
                                         <!-- Start Product Action -->
-                                        <div class="product-gallery-actions">
-                                            <a href="#open-video-popup" class="action-btn video-popup open-video-popup"><i class="ti-control-play"></i></a>
+                                        {{-- <div class="product-gallery-actions">
                                             <a id="lightgallery-btn" class="action-btn gallery-popup lightgallery-btn"><i class="ti-zoom-in"></i></a>
-                                        </div>
+                                        </div> --}}
                                         <!-- End Product Action -->
 
-                                        <!-- Start Product Details Video Popup -->
-                                        <div id="open-video-popup" class="youtube-video-popup magnific-popup mfp-hide">
-                                            <div class="embed-responsive embed-responsive-16by9">
-                                                <iframe class="embed-responsive-item" src="about:blank" allowfullscreen=""></iframe>
-                                            </div>
-                                        </div>
-                                        <!-- End Product Details Video Popup -->
+
                                     </div>
                                 </div>
                                 <!-- End Product Thumb Slider -->
 
-                                <!-- Start Store Features -->
-                                <div class="store-features clearfix">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                            <div class="info-area d-table clearfix">
-                                                <div class="info-icon d-table-cell align-middle">
-                                                    <img class="img-fluid blur-up lazyload" src="images/icons/free-shipping.png" data-src="images/icons/free-shipping.png" alt="image" title="image" />
-                                                </div>
-                                                <div class="info-details d-table-cell align-middle">
-                                                    <h5>Free &amp; Fast Shipping</h5>
-                                                    <span>Free &amp; Fast Shipping over 100+ countries &amp; regions.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                            <div class="info-area d-table">
-                                                <div class="info-icon d-table-cell align-middle">
-                                                    <img class="img-fluid blur-up lazyload" src="images/icons/safe-payment.png" data-src="images/icons/safe-payment.png" alt="image" title="image" />
-                                                </div>
-                                                <div class="info-details d-table-cell align-middle">
-                                                    <h5>Safe Payment</h5>
-                                                    <span>Pay with the world's most payment methods</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                            <div class="info-area d-table">
-                                                <div class="info-icon d-table-cell align-middle">
-                                                    <img class="img-fluid blur-up lazyload" src="images/icons/return-exchange.png" data-src="images/icons/return-exchange.png" alt="image" title="image" />
-                                                </div>
-                                                <div class="info-details d-table-cell align-middle">
-                                                    <h5>Return &amp; Exchange</h5>
-                                                    <span>30 days online purchase - return &amp; Exchange Policy</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                            <div class="info-area d-table">
-                                                <div class="info-icon d-table-cell align-middle">
-                                                    <img class="img-fluid blur-up lazyload" src="images/icons/support-24.png" data-src="images/icons/support-24.png" alt="image" title="image" />
-                                                </div>
-                                                <div class="info-details d-table-cell align-middle">
-                                                    <h5>Support 24/7</h5>
-                                                    <span>We support 24/7 Have a Question? Call Us <a href="tel:123-45-6789">123-45-6789</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Store Features -->
                             </div>
                             <!-- End Product Store Features -->
 
@@ -146,39 +81,16 @@
                             <div class="col-12 col-sm-12 col-md-6 product-info-details">
                                 <!-- Start Product Info -->
                                 <div class="profuct-info">
-                                    <h1 class="product-title">Waterproof Cigarette tiyer</h1>
-                                    <div class="pro-revi-arrow clearfix">
-                                        <div class="product-starrating pull-left">
-                                            <i class="spr-icon fa fa-star"></i>
-                                            <i class="spr-icon fa fa-star"></i>
-                                            <i class="spr-icon fa fa-star"></i>
-                                            <i class="spr-icon fa fa-star"></i>
-                                            <i class="spr-icon fa fa-star-o"></i>
-                                            <span>4 Reviews</span>
-                                        </div>
-                                        <div class="pro-arrow pull-right">
-                                            <a class="pro-next" href="product-details.html"><i class="ti-angle-left"></i></a>
-                                            <a class="pro-prev" href="product-details-classic.html"><i class="ti-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <ul class="row pro-info-list">
-                                        <li class="col-12 col-md-4 col-sm-4 instock text-sm-left">In Stock</li>
-                                        <li class="col-12 col-md-4 col-sm-4 vendor text-sm-center"><b>Vendor:</b> Autoparts</li>
-                                        <li class="col-12 col-md-4 col-sm-4 sku text-sm-right"><b>SKU:</b> 19115-rdxs</li>
-                                    </ul>
+                                    <h1 class="product-title">product name</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat obcaecati blanditiis soluta excepturi provident eveniet, sit dolor, possimus corrupti, nisi dolores unde numquam culpa distinctio perspiciatis maiores odit molestiae!</p>
                                 </div>
                                 <!-- End Product Info -->
 
                                 <!-- Start Product Price -->
                                 <ul class="d-sm-flex flex-sm-row align-items-sm-center product-price-info">
                                     <li class="product-price m-0"><span class="compare-price">$499.00</span><span class="sale-price">$399.00</span></li>
-                                    <li class="save-price">You Save <span class="save-count">$100.00 (10%)</span></li>
                                 </ul>
                                 <!-- End Product Price -->
-
-                                <!-- Start Product Sold In Last -->
-                                <p class="sold-in-last"><span class="align-middle">10 sold in last 20 hours</span></p>
-                                <!-- End Product Sold In Last -->
 
                                 <!-- Start Product List Info -->
                                 <ul class="d-flex flex-column pro-lists">
@@ -189,47 +101,6 @@
                                 </ul>
                                 <!-- End Product List Info -->
 
-                                <!-- Start Product Progress Bar -->
-                                <div class="progress-stock">
-                                    <h4>Hurry! Only <span>20</span> left in stock.</h4>
-                                    <div class="progress rounded-0">
-                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <!-- End Product Progress Bar -->
-
-                                <!-- Start Product Time Counter -->
-                                <div class="product-counter-text clearfix">
-                                    <h4>Hurry up! Limited time Offer</h4> 
-                                    <div class="product-counter clearfix" data-countdown="2024/10/01"></div>                                       
-                                </div>
-                                <!-- End Product Time Counter -->
-
-                                <!-- Start Product Color -->
-                                <div class="product-color">
-                                    <p class="mb-2">Color:  <b>RED</b></p>
-                                    <ul class="d-flex flex-row align-items-center color-item" data-toggle="buttons">
-                                        <li class="btn black active" data-toggle="tooltip" data-placement="top" title="black"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                        <li class="btn navy" data-toggle="tooltip" data-placement="top" title="navy"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                        <li class="btn light-blue" data-toggle="tooltip" data-placement="top" title="light-blue"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                        <li class="btn green" data-toggle="tooltip" data-placement="top" title="green"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                        <li class="btn yellow" data-toggle="tooltip" data-placement="top" title="yellow"><img class="img-fluid" src="images/products/product-swatch-50x50.jpg" alt="image" /></li>
-                                    </ul>
-                                </div>
-                                <!-- End Product Color -->
-
-                                <!-- Start Product Size -->
-                                <div class="product-size">
-                                    <p class="mb-2">Color: <b>XL</b></p>
-                                    <ul class="d-flex flex-row align-items-center color-item" data-toggle="buttons">
-                                        <li class="btn x active" data-toggle="tooltip" data-placement="top" title="x"><span>X</span></li>
-                                        <li class="btn xl" data-toggle="tooltip" data-placement="top" title="xl"><span>XL</span></li>
-                                        <li class="btn m" data-toggle="tooltip" data-placement="top" title="m"><span>M</span></li>
-                                        <li class="btn s" data-toggle="tooltip" data-placement="top" title="s"><span>S</span></li>
-                                        <li class="btn xxl" data-toggle="tooltip" data-placement="top" title="xxl"><span>XXL</span></li>
-                                    </ul>
-                                </div>
-                                <!-- End Product Size -->
 
                                 <!-- Start Cart Box -->
                                 <div class="addToBox">
@@ -266,152 +137,11 @@
                                     </div>
                                     <!-- End Product Wish List -->
 
-                                    <!-- Start Product Size Shipping Info -->
-                                    <div class="size-ship-info pull-right">
-                                        <!-- Start Product Size -->
-                                        <div class="size-chart pull-left">
-                                            <a href="" class="size-chart-btn" data-toggle="modal" data-target="#size-guide-model"><i class="ti-ruler-pencil align-middle mr-2"></i> <span class="align-middle">Size Guide</span></a> 
-                                            <!-- Start Size Guide Modal -->
-                                            <div class="size-guide-model modal fade" id="size-guide-model" tabindex="-1" role="dialog" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-body">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
-                                                            <div class="row size-chart-conversion">
-                                                                <div class="col-12 col-sm-6 col-md-6 size-chart-table">
-                                                                    <h4>Single Size Conversion</h4>
-                                                                    <table class="table table-striped product-info-table">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>UK</td>
-                                                                                <td>18</td>
-                                                                                <td>20</td>
-                                                                                <td>22</td>
-                                                                                <td>24</td>
-                                                                                <td>26</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>European</td>
-                                                                                <td>18</td>
-                                                                                <td>20</td>
-                                                                                <td>22</td>
-                                                                                <td>24</td>
-                                                                                <td>26</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>US</td>
-                                                                                <td>18</td>
-                                                                                <td>20</td>
-                                                                                <td>22</td>
-                                                                                <td>24</td>
-                                                                                <td>26</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Australia</td>
-                                                                                <td>18</td>
-                                                                                <td>20</td>
-                                                                                <td>22</td>
-                                                                                <td>24</td>
-                                                                                <td>26</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>India</td>
-                                                                                <td>18</td>
-                                                                                <td>20</td>
-                                                                                <td>22</td>
-                                                                                <td>24</td>
-                                                                                <td>26</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="col-12 col-sm-6 col-md-6 text-center size-chart-img">
-                                                                    <img class="img-fluid blur-up lazyload" src="images/others/size-chart.png" data-src="images/others/size-chart.png" alt="image" title="image" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Size Guide Modal -->
-                                        </div>
-                                        <!-- End Product Size -->
-
-                                        <!-- Start Product Shipping Info -->
-                                        <div class="shipping-info pull-left">
-                                            <a href="" class="ship-info-btn" data-toggle="modal" data-target="#ship-info-model"><i class="ti-truck align-middle mr-2"></i> <span class="align-middle">Shipping Info</span></a>
-                                            <!-- Start Shipping Info Modal -->
-                                            <div class="ship-info-model modal fade" id="ship-info-model" tabindex="-1" role="dialog" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-body">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
-                                                            <div class="shipping-returns-content">
-                                                                <h4>Return Policy</h4>
-                                                                <p class="mb-1">Items returned within 14 days of their original shipment date in same as new condition will be eligible for a full refund or store credit.</p>
-                                                                <p class="mb-1">Refunds will be charged back to the original form of payment used for purchase.</p>
-                                                                <p class="mb-1">Customer is responsible for shipping charges when making returns and shipping/handling fees of original purchase is non-refundable.</p>
-                                                                <p>All sale items are final purchases.</p>
-                                                                <h4>Shipping</h4>
-                                                                <p class="mb-1">All orders shipped with UPS Express.</p>
-                                                                <p class="mb-1">Always free shipping for orders over US $250.</p>
-                                                                <p>All orders are shipped with a UPS tracking number.</p>
-                                                                <h4>Help</h4>
-                                                                <p class="mb-1">Give us a shout if you have any other questions and/or concerns.</p>
-                                                                <p class="mb-1">Email: <a href="mailto:yourmail@domain.com">yourmail@domain.com</a></p>
-                                                                <p>Phone: <a href="tel:0123456789">0123456789</a></p>
-                                                                <ul class="d-flex flex-column pro-lists">
-                                                                    <li><i class="fa fa-check mr-2" aria-hidden="true"></i>Version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</li>
-                                                                    <li><i class="fa fa-check mr-2" aria-hidden="true"></i>Aenean sollicitudin, lorem quis bibendum auctor.</li>
-                                                                    <li><i class="fa fa-check mr-2" aria-hidden="true"></i>Nisi elit consequat ipsum, nec sagittis sem nibh id elit.</li>
-                                                                    <li><i class="fa fa-check mr-2" aria-hidden="true"></i>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Shipping Info Modal -->
-                                        </div>
-                                        <!-- End Product Shipping Info -->
-                                    </div>
-                                    <!-- Start Product Size Shipping Info -->
                                 </div>
 
-                                <!-- Start Product Counter Time -->
-                                <div class="counter-real-time">
-                                    <i class="fa fa-users mr-2" aria-hidden="true"></i> Real time <span class="number-counter mx-1">98</span> Visitor right now
-                                </div>
-                                <!-- Start Product Counter Time -->
 
-                                <!-- Start Product Next Order Info -->
-                                <div class="get-next-order">
-                                    <i class="fa fa-hourglass-half mr-2" aria-hidden="true"></i>
-                                    Order in the next <span class="hr-min">4 hours 0 minutes</span> to get it by <span class="date">Tuesday 04/16/2019</span>
-                                </div>
-                                <!-- Start Product Next Order Info -->
 
-                                <!-- Start Checkout Info -->
-                                <div class="checkout-safe">
-                                    <fieldset>
-                                        <legend>Guaranteed Safe Checkout</legend>
-                                        <img class="img-fluid" src="images/icons/checkout-icon.png" alt="Guaranteed Safe Checkout" title="Guaranteed Safe Checkout" />
-                                    </fieldset>
-                                </div>
-                                <!-- Start Product Checkout Info -->
 
-                                <!-- Start Product Social Media -->
-                                <div class="social-media">
-                                    <ul class="d-flex flex-row">
-                                        <li><span>Share:</span></li>
-                                        <li><a href="#" title="Facebook"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="#" title="Twitter"><i class="ti-twitter"></i></a></li>
-                                        <li><a href="#" title="Google Plus"><i class="ti-google"></i></a></li>
-                                        <li><a href="#" title="Pinterest"><i class="ti-pinterest"></i></a></li>
-                                        <li><a href="#" title="Email"><i class="ti-email"></i></a></li>
-                                    </ul>
-                                </div>
-                                <!-- Start Product Social Media -->
                             </div>
                             <!-- End Product Info Details -->
                         </div>
@@ -478,205 +208,6 @@
                             </div>
                             <!-- End Product Details Accordion1 -->
 
-                            <!-- Start Product Reviews Accordion2 -->
-                            <div class="card border-0">
-                                <div class="card-header" id="headingTwo">
-                                    <a class="accordion-btn" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Product Reviews</a>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#products-detail-accordion">
-                                    <div class="card-body drawertab-content">
-                                        <div class="product-review">
-                                            <h4>Customer Reviews</h4>
-                                            <div class="customer-review d-sm-flex align-items-center">
-                                                <div class="product-starrating m-0 flex-grow-1 pull-left">
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                    <span class="ml-2">Based on 4 reviews</span>
-                                                </div>
-                                                <button type="submit" class="btn btn-secondary pull-right write-review-btn">Write a review</button>
-                                            </div>
-                                        </div>
-                                        <div class="product-review-form">
-                                            <h4>Write a review</h4>
-                                            <form action="#" class="needs-validation" novalidate>
-                                                <div class="form-group row">
-                                                    <div class="col-12 col-sm-6 col-md-6">
-                                                        <label>Name</label>
-                                                        <input type="text" class="form-control" placeholder="" required />
-                                                        <div class="invalid-feedback">Please enter your name.</div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-6 col-md-6">
-                                                        <label>Email</label>
-                                                        <input type="text" class="form-control" placeholder="" required />
-                                                        <div class="invalid-feedback">Please enter your email.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-12 col-sm-6 col-md-6">
-                                                        <label>Rating</label>
-                                                        <div class="product-starrating">
-                                                            <i class="spr-icon fa fa-star-o"></i>
-                                                            <i class="spr-icon fa fa-star-o"></i>
-                                                            <i class="spr-icon fa fa-star-o"></i>
-                                                            <i class="spr-icon fa fa-star-o"></i>
-                                                            <i class="spr-icon fa fa-star-o"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-6 col-md-6">
-                                                        <label>Review Title</label>
-                                                        <input type="text" class="form-control" placeholder="" required />
-                                                        <div class="invalid-feedback">Please enter review title.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Body of Review (1500)</label>
-                                                    <textarea class="form-control" rows="3" placeholder="" required></textarea>
-                                                    <div class="invalid-feedback">Please enter review details.</div>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Submit Review</button>
-                                            </form>
-                                        </div>
-                                        <div class="product-review-list">
-                                            <ul>
-                                                <li>
-                                                    <div class="product-starrating">
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                    </div>
-                                                    <p class="review-date">Jason on Sep 17, 2018</p>
-                                                    <h5>Features and abilities that seem to be the best</h5>
-                                                    <p>The code is clean, the performance is good and the support is great too. The theme in itself is already great, but the support is at top level. Really like the Theme with all the nice Functions!</p>
-                                                    <a href="#">Report as Inappropriate</a>
-                                                </li>
-                                                <li>
-                                                    <div class="product-starrating">
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star-o"></i>
-                                                        <i class="spr-icon fa fa-star-o"></i>
-                                                    </div>
-                                                    <p class="review-date">Sheldon on Sep 17, 2018</p>
-                                                    <h5>Fantastic customer support from the developing team.</h5>
-                                                    <p>The code is clean, the performance is good and the support is great too. The theme in itself is already great, but the support is at top level. Really like the Theme with all the nice Functions!</p>
-                                                    <a href="#">Report as Inappropriate</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Product Reviews Accordion2 -->
-
-                            <!-- Start Product Size Chart Accordion3 -->
-                            <div class="card border-0">
-                                <div class="card-header" id="headingThree">
-                                    <a class="accordion-btn" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Size Chart</a>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#products-detail-accordion">
-                                    <div class="card-body drawertab-content">
-                                        <div class="row size-chart-conversion">
-                                            <div class="col-12 col-sm-6 col-md-6 size-chart-table">
-                                                <h4>Single Size Conversion</h4>
-                                                <table class="table table-striped product-info-table">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>UK</td>
-                                                            <td>18</td>
-                                                            <td>20</td>
-                                                            <td>22</td>
-                                                            <td>24</td>
-                                                            <td>26</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>European</td>
-                                                            <td>18</td>
-                                                            <td>20</td>
-                                                            <td>22</td>
-                                                            <td>24</td>
-                                                            <td>26</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>US</td>
-                                                            <td>18</td>
-                                                            <td>20</td>
-                                                            <td>22</td>
-                                                            <td>24</td>
-                                                            <td>26</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Australia</td>
-                                                            <td>18</td>
-                                                            <td>20</td>
-                                                            <td>22</td>
-                                                            <td>24</td>
-                                                            <td>26</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>India</td>
-                                                            <td>18</td>
-                                                            <td>20</td>
-                                                            <td>22</td>
-                                                            <td>24</td>
-                                                            <td>26</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="col-12 col-sm-6 col-md-6 text-center size-chart-img">
-                                                <img class="img-fluid blur-up lazyload" src="images/others/size-chart.png" data-src="images/others/size-chart.png" alt="image" title="image" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Product Size Chart Accordion3 -->
-
-                            <!-- Start Product Shipping & Returns Accordion4 -->
-                            <div class="card border-0">
-                                <div class="card-header" id="headingFour">
-                                    <a class="accordion-btn" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Shipping & Returns</a>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#products-detail-accordion">
-                                    <div class="card-body drawertab-content">
-                                        <div class="shipping-returns-content">
-                                            <h4>Return Policy</h4>
-                                            <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra. Version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-                                            <h4>Shipping</h4>
-                                            <p>Pellentesque ultrices ut sem sit amet lacinia. Sed nisi dui, ultrices ut turpis pulvinar. Sed fringilla ex eget lorem consectetur, consectetur blandit lacus varius. Duis vel scelerisque elit, et vestibulum metus. Integer sit amet tincidunt tortor. Ut lacinia ullamcorper massa, a fermentum arcu vehicula ut. Ut efficitur faucibus dui Nullam tristique dolor eget turpis consequat varius. Quisque a interdum augue. Nam ut nibh mauris. </p>
-                                            <ul class="d-flex flex-column pro-lists">
-                                                <li><i class="fa fa-check mr-2" aria-hidden="true"></i>Version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</li>
-                                                <li><i class="fa fa-check mr-2" aria-hidden="true"></i>Aenean sollicitudin, lorem quis bibendum auctor.</li>
-                                                <li><i class="fa fa-check mr-2" aria-hidden="true"></i>Nisi elit consequat ipsum, nec sagittis sem nibh id elit.</li>
-                                                <li><i class="fa fa-check mr-2" aria-hidden="true"></i>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Product Shipping & Returns Accordion4 -->
-
-                            <!-- Start Custom Tab Accordion5 -->
-                            <div class="card border-0">
-                                <div class="card-header" id="headingFive">
-                                    <a class="accordion-btn" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Custom Tab</a>
-                                </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#products-detail-accordion">
-                                    <div class="card-body drawertab-content">
-                                        <div class="custom-content">
-                                            <h4>We are proud to present our Lorem Ipsum passage.</h4>
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer scrambled it to make a type specimen book.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><br>There are many variations of passages of Lorem Ipsum available.<br>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Custom Tab Accordion5 -->
                         </div>
                     </div>
                 </div>
