@@ -33,7 +33,7 @@
                             <div class="container slideshow-details p-3" style="background:rgba(0, 0, 0, 0.50); border-radius:25px;">
                                 <h3>Looking for the perfect accessories?</h3>
                                 <p>Explore our shop and find what you need.</p>
-                                <a href="shop-grid-left-sidebar.html" class="btn btn-primary">Go</a>
+                                <a href="shop" class="btn btn-primary">Go</a>
                             </div>
                         </div>
                     </div>
@@ -96,12 +96,13 @@
                                 <h2>New Product</h2>
                                 <p>Browse the huge variety of our products</p>
                             </div>
-                            <ul class="drawer-tabs tabs">
-                                <li class="item active" data-tab="tab1"><a>Interior</a></li>
+                            
+                            {{-- <ul class="drawer-tabs tabs">
+                                <li class="item active" data-tab="tab1"><a>Electricaly</a></li>
                                 <li class="item" data-tab="tab2"><a>Engine</a></li>
                                 <li class="item" data-tab="tab3"><a>Suspension</a></li>
                                 <li class="item" data-tab="tab4"><a>Lighting</a></li>
-                            </ul>
+                            </ul> --}}
                         </div>
                         <!-- Start Tab Container -->
                         <div class="tab-content responsiveTabs">
@@ -110,14 +111,16 @@
                             <div id="tab1" class="drawertab-content">
                                 <div class="row row-sp row-eq-height prcarousel">
                                     <!-- first element start tab1-->
+                                    @foreach ($newProduct as $Product)
+                                    {{-- {{ dd($Product->subCategory); }} --}}
                                     <div class="col-sp col-xl-12 col-lg-3 col-md-4 col-sm-6 col-6">
                                         <div class="product-item">
                                             <div class="product-image-action">
 
                                                 <div class="product-image">
                                                     <a href="product-details.html">
-                                                        <img class="img-fluid blur-up lazyload primary-img" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
-                                                        <img class="img-fluid blur-up lazyload product-imghover secondary-img" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
+                                                        <img class="img-fluid blur-up lazyload primary-img" src="images/products/product-1.jpg" data-src="{{ $Product->image1 }}" alt="image" title="image" />
+                                                        <img class="img-fluid blur-up lazyload product-imghover secondary-img" src="images/products/product-1-1.jpg" data-src="{{ $Product->image2 }}" alt="image" title="image" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action">
@@ -130,166 +133,23 @@
                                                 </div>
                                             </div>
                                             <div class="product-details">
-                                                <h3 class="product-title"><a href="product-details.html">Donec pede justo fringilla</a></h3>
-                                                <h4 class="product-vendor">Posh Auto Parts</h4>
-                                                <div class="product-starrating">
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                </div>
+                                                <h3 class="product-title"><a href="product-details.html">{{ $Product->product_name }}</a></h3>
+                                                <h4 class="product-vendor">{{ $Product->subCategory->name }}</h4>
+                                                
                                                 <div class="product-price">
-                                                    <span class="compare-price">$125.22</span>
-                                                    <span class="sale-price">$113.88</span>
+                                                    <span class="compare-price">{{ $Product->price }}</span>
+                                                    <span class="sale-price">{{ $Product->price }}</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    @endforeach
+
                                     <!-- first element end -->
 
                                 </div>
                             </div>
                             <!-- End Tab1 -->
-                            <!-- Tab2 -->
-                            <h3 class="tab-drawer-heading" data-tab="tab2"><a>Engine</a></h3>
-                            <div id="tab2" class="drawertab-content">
-                                <div class="row row-sp row-eq-height prcarousel">
-                                    <!-- first element start tab2-->
-                                    <div class="col-sp col-xl-12 col-lg-3 col-md-4 col-sm-6 col-6">
-                                        <div class="product-item">
-                                            <div class="product-image-action">
-                                                <div class="product-image">
-                                                    <a href="product-details.html">
-                                                        <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
-                                                        <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
-                                                    </a>
-                                                </div>
-                                                <div class="product-action">
-                                                    <ul>
-                                                        <li class="actions-addcart" data-toggle="tooltip" data-placement="top" title="add to cart"><a href="#open-addtocart-popup" class="btn open-addtocart-popup"><i class="icon ti-shopping-cart"></i></a></li>
-                                                        <li class="actions-quickview" data-toggle="tooltip" data-placement="top" title="quick view"><a href="#open-quickview-popup" class="btn open-quickview-popup"><i class="icon ti-zoom-in"></i></a></li>
-                                                        <li class="actions-wishlist" data-toggle="tooltip" data-placement="top" title="add to wishlist"><a href="#open-wishlist-popup" class="btn open-wishlist-popup"><i class="icon ti-heart"></i></a></li>
-                                                        <li class="actions-compare" data-toggle="tooltip" data-placement="top" title="add to compare"><a href="compare.html" class="btn"><i class="icon ti-control-shuffle"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="product-details">
-                                                <h3 class="product-title"><a href="product-details.html">Pellentesque habitant morbi</a></h3>
-                                                <h4 class="product-vendor">Posh Auto Parts</h4>                                           
-                                                <div class="product-starrating">
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                </div>
-                                                <div class="product-price">
-                                                    <span class="sale-price">$113.88</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- first element end tab2-->
-
-                                </div>
-                            </div>
-                            <!-- End Tab2 -->
-                            <!-- Start Tab3 -->
-                            <h3 class="tab-drawer-heading" data-tab="tab3"><a>Suspension</a></h3>
-                            <div id="tab3" class="drawertab-content">
-                                <div class="row row-sp row-eq-height prcarousel">
-                                    <!-- first element start tab3-->
-                                    <div class="col-sp col-xl-12 col-lg-3 col-md-4 col-sm-6 col-6">
-                                        <div class="product-item">
-                                            <div class="product-image-action">
-                                                <div class="product-label">
-                                                    <span class="label new">New</span>
-                                                    <span class="label sale">Sale</span>
-                                                </div>
-                                                <div class="product-image">
-                                                    <a href="product-details.html">
-                                                        <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
-                                                        <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
-                                                    </a>
-                                                </div>
-                                                <div class="product-action">
-                                                    <ul>
-                                                        <li class="actions-addcart" data-toggle="tooltip" data-placement="top" title="add to cart"><a href="#open-addtocart-popup" class="btn open-addtocart-popup"><i class="icon ti-shopping-cart"></i></a></li>
-                                                        <li class="actions-quickview" data-toggle="tooltip" data-placement="top" title="quick view"><a href="#open-quickview-popup" class="btn open-quickview-popup"><i class="icon ti-zoom-in"></i></a></li>
-                                                        <li class="actions-wishlist" data-toggle="tooltip" data-placement="top" title="add to wishlist"><a href="#open-wishlist-popup" class="btn open-wishlist-popup"><i class="icon ti-heart"></i></a></li>
-                                                        <li class="actions-compare" data-toggle="tooltip" data-placement="top" title="add to compare"><a href="compare.html" class="btn"><i class="icon ti-control-shuffle"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="product-details">
-                                                <h3 class="product-title"><a href="product-details.html">Stockvault oil plastic</a></h3>
-                                                <h4 class="product-vendor">Posh Auto Parts</h4>                                            
-                                                <div class="product-starrating">
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                </div>
-                                                <div class="product-price">
-                                                    <span class="compare-price">$125.22</span>
-                                                    <span class="sale-price">$113.88</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- first element end tab3-->
-
-                                </div>
-                            </div>
-                            <!-- End Tab3 -->
-                            <!-- Start Tab4 -->
-                            <h3 class="tab-drawer-heading" data-tab="tab4"><a>Lighting</a></h3>
-                            <div id="tab4" class="drawertab-content">
-                                <div class="row row-sp row-eq-height prcarousel">
-                                    <!-- first element start tab4-->
-                                    <div class="col-sp col-xl-12 col-lg-3 col-md-4 col-sm-6 col-6">
-                                        <div class="product-item">
-                                            <div class="product-image-action">
-                                                <div class="product-label">
-                                                    <span class="label new">New</span>
-                                                </div>
-                                                <div class="product-image">
-                                                    <a href="product-details.html">
-                                                        <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
-                                                        <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
-                                                    </a>
-                                                </div>
-                                                <div class="product-action">
-                                                    <ul>
-                                                        <li class="actions-addcart" data-toggle="tooltip" data-placement="top" title="add to cart"><a href="#open-addtocart-popup" class="btn open-addtocart-popup"><i class="icon ti-shopping-cart"></i></a></li>
-                                                        <li class="actions-quickview" data-toggle="tooltip" data-placement="top" title="quick view"><a href="#open-quickview-popup" class="btn open-quickview-popup"><i class="icon ti-zoom-in"></i></a></li>
-                                                        <li class="actions-wishlist" data-toggle="tooltip" data-placement="top" title="add to wishlist"><a href="#open-wishlist-popup" class="btn open-wishlist-popup"><i class="icon ti-heart"></i></a></li>
-                                                        <li class="actions-compare" data-toggle="tooltip" data-placement="top" title="add to compare"><a href="compare.html" class="btn"><i class="icon ti-control-shuffle"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="product-details">
-                                                <h3 class="product-title"><a href="product-details.html">Auto parts Tools</a></h3>
-                                                <h4 class="product-vendor">Posh Auto Parts</h4>                                           
-                                                <div class="product-starrating">
-                                                    <i class="spr-icon fa fa-star"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                    <i class="spr-icon fa fa-star-o"></i>
-                                                </div>
-                                                <div class="product-price">
-                                                    <span class="sale-price">$125.88</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- first element end tab4-->
-                                </div>
-                            </div>
-                            <!-- End Tab4 -->
                         </div>
                         <!-- End Tab Container -->
                     </div>
@@ -337,14 +197,17 @@
                     <div class="container-fluid p-0">
                         <div class="row no-gutters home-collection-prcarousel">
                             {{-- collection first element start --}}
+                            @foreach ($subCate as $category )
+                                
                             <div class="col collection-item">
                                 <a href="shop-grid-left-sidebar.html" class="animate-scale collection-img">
-                                    <img class="img-fluid blur-up lazyload w-100" src="images/collection/collection1.jpg" data-src="images/collection/collection1.jpg" alt="image" title="image" />
+                                    <img class="img-fluid  lazyload w-100"  data-src="{{ $category->image }}" alt="image" title="image" />
                                 </a>
                                 <div class="collection-details">
-                                    <a href="shop-grid-left-sidebar.html" class="collection-title">Interior Accessories</a>
+                                    <a href="shop-grid-left-sidebar.html" class="collection-title">{{ $category->name }}</a>
                                 </div>
                             </div>
+                            @endforeach
                             {{-- collection first element end --}}
 
                         </div>

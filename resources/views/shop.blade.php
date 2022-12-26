@@ -37,7 +37,8 @@
                                         <div class="block-item categories">
                                             <h4 class="sub-title">Categories</h4>
                                             <ul class="block-details list sidebar-collections">
-                                                <li class="cat-submenu-link"><a href="#;">Drills & Mixers</a>
+                                                @foreach ($mainC as $main )
+                                                <li class="cat-submenu-link"><a href="#;">{{ $main->name }}</a>
                                                     <ul class="cat-submenu-list">
                                                         <li class="item"><a href="#">Portable Electric</a></li>
                                                         <li class="item"><a href="#">Gas Hand-Held</a></li>
@@ -45,22 +46,7 @@
                                                         <li class="item more"><a href="#">View More Category</a></li>
                                                     </ul>
                                                 </li>
-                                                <li class="cat-submenu-link"><a href="#;">Cordless Screwdrivers</a>
-                                                    <ul class="cat-submenu-list">
-                                                        <li class="item"><a href="#">Portable Electric</a></li>
-                                                        <li class="item"><a href="#">Gas Hand-Held</a></li>
-                                                        <li class="item"><a href="#">Mega Mixing</a></li>
-                                                        <li class="item more"><a href="">View More Category</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Screwdrivers</a></li>
-                                                <li><a href="#">Wrenches</a></li>
-                                                <li><a href="#">Grinding Machines</a></li>
-                                                <li><a href="#">Milling Cutters</a></li>
-                                                <li><a href="#">Electric Spray Guns</a></li>
-                                                <li><a href="#">Jigsaws</a></li>
-                                                <li><a href="#">Jackhammers</a>
-                                                <li class="item more"><a href="">View More Category</a></li>
+                                                @endforeach
                                             </ul>
                                         </div>
                                         <!-- End Categories -->
@@ -169,6 +155,8 @@
                                 <div class="products products-grid">
                                     <div class="row row-sp row-eq-height">
                                         {{-- first product start --}}
+                                        @foreach ($Products as $Product )
+                                            
                                         <div class="col-sp col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                             <div class="product-item">
                                                 <div class="product-image-action">
@@ -179,11 +167,10 @@
                                                     </div>
                                                     <div class="product-image">
                                                         <a href="product-details.html">
-                                                            <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="images/products/product-1.jpg" alt="image" title="image" />
-                                                            <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="images/products/product-1-1.jpg" alt="image" title="image" />
+                                                            <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="{{ $Product->image1 }}" alt="image" title="image" />
+                                                            <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="{{ $Product->image2 }}" alt="image" title="image" />
                                                         </a>
                                                     </div>
-                                                    <div class="product-counter clearfix" data-countdown="2024/10/01"></div>
                                                     <div class="product-action">
                                                         <ul>
                                                             <li class="actions-addcart" data-toggle="tooltip" data-placement="top" title="add to cart"><a href="#open-addtocart-popup" class="btn open-addtocart-popup"><i class="icon ti-shopping-cart"></i></a></li>
@@ -194,30 +181,23 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-details">
-                                                    <h3 class="product-title"><a href="product-details.html">Donec pede justo fringilla</a></h3>
-                                                    <h4 class="product-vendor">Posh Auto Parts</h4>                                       
-                                                    <div class="product-starrating">
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star"></i>
-                                                        <i class="spr-icon fa fa-star-o"></i>
-                                                    </div>
+                                                    <h3 class="product-title"><a href="product-details.html">{{ $Product->name }}</a></h3>
+                                                    <h4 class="product-vendor">{{ $Product->subCategory->name }}</h4>                                       
+                                                
                                                     <div class="product-price">
-                                                        <span class="compare-price">$125.22</span>
-                                                        <span class="sale-price">$113.88</span>
+                                                        <span class="sale-price">Price: {{ $Product->price }} JD</span>
                                                     </div>
                                                     <div class="image-swatch-list">
                                                         <ul class="d-flex flex-row justify-content-center align-items-center">
-                                                            <li class="active" data-toggle="tooltip" data-placement="top" title="xl"><img class="img-fluid" src="images/products/product-1.jpg" alt="image" title="" /></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="x"><img class="img-fluid" src="images/products/product-1.jpg" alt="image" title="" /></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="m"><img class="img-fluid" src="images/products/product-1.jpg" alt="image" title="" /></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="s"><img class="img-fluid" src="images/products/product-1.jpg" alt="image" title="" /></li>
+                                                            <li data-toggle="tooltip" data-placement="top" title="xl"><img class="img-fluid" src="{{ $Product->image1 }}" alt="image" title="" /></li>
+                                                            <li data-toggle="tooltip" data-placement="top" title="x"><img class="img-fluid" src="{{ $Product->image2 }}" alt="image" title="" /></li>
+                                                            <li data-toggle="tooltip" data-placement="top" title="s"><img class="img-fluid" src="{{ $Product->image3 }}" alt="image" title="" /></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
                                         {{-- first product end --}}
 
                                     </div>

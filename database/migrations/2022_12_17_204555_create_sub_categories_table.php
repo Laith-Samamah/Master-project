@@ -16,10 +16,12 @@ return new class extends Migration
         Schema::create('sub_categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('main_category');
+            $table->foreignId('main_category_id');
+            $table->string('image')->nullable();
             $table->timestamps();
+            $table->softDeletes();
 
-            $table->foreign('main_category')->references('id')->on('main_categories')->onDelete('cascade');
+            $table->foreign('main_category_id')->references('id')->on('main_categories')->onDelete('cascade');
         });
     }
 

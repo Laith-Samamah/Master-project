@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MainCategory;
 use App\Models\Product;
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -14,7 +16,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $Products = Product::all();
+        $mainC = MainCategory::all();
+        $subCate = SubCategory::all();
+        return view('shop', ['Products' => $Products, 'subCate' => $subCate, 'mainC' => $mainC]);
     }
 
     /**

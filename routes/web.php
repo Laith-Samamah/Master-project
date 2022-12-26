@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\ProductController;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [Controller::class, 'index']);
+
+Route::get('/shop', [ProductController::class, 'index']);
 
 Route::get('/about', function () {
     return view('about');
@@ -49,9 +52,6 @@ Route::get('/product', function () {
     return view('product-details');
 });
 
-Route::get('/shop', function () {
-    return view('shop');
-});
 
 Route::get('/wishlist', function () {
     return view('wishlist');
