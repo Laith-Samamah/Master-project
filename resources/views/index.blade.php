@@ -47,7 +47,7 @@
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-6 banner-1">
                                 <div class="small-banner-1 position-relative">
-                                    <a class="animate-scale" href="/shop"><img class="img-fluid blur-up lazyload w-100" src="images/banner/ban1.png" data-src="images/banner/ban1.png" alt="image" title="image" /></a>
+                                    <a class="animate-scale" href="/shop?category=1"><img class="img-fluid blur-up lazyload w-100" src="images/banner/ban1.png" data-src="images/banner/ban1.png" alt="image" title="image" /></a>
                                     <div class="banner-details">
                                         <h3>Electrical <span>Parts</span></h3>
                                         <p>Check our wide collection now!</p>
@@ -59,7 +59,7 @@
                                 <div class="row mb-3">
                                     <div class="col-12 col-sm-12">
                                         <div class="small-banner-4 position-relative">
-                                            <a class="animate-scale" href="/shop">
+                                            <a class="animate-scale" href="/shop?category=2">
                                                 <img class="img-fluid blur-up lazyload w-100" src="images/banner/banner-3.jpg" data-src="images/banner/b2.png" alt="image" title="image" />
                                                 <div class="banner-details">
                                                     <h3 class="mb-3">Mechanical <span>Parts</span></h3>
@@ -72,7 +72,7 @@
                                 <div class="row">
                                     <div class="col-12 col-sm-12">
                                         <div class="small-banner-4 position-relative">
-                                            <a class="animate-scale" href="/shop">
+                                            <a class="animate-scale" href="/shop?category=3">
                                                 <img class="img-fluid blur-up lazyload w-100" src="images/banner/wipers-2.jpg" data-src="images/banner/wipers1.png" alt="image" title="image" />
                                                 <div class="banner-details">
                                                     <h3 class="mb-3">Wiper blades</h3>
@@ -118,7 +118,7 @@
                                             <div class="product-image-action">
 
                                                 <div class="product-image">
-                                                    <a href="product-details.html">
+                                                    <a href="/product/{{ $Product->id }}">
                                                         <img class="img-fluid blur-up lazyload primary-img" src="images/products/product-1.jpg" data-src="{{ $Product->image1 }}" alt="image" title="image" />
                                                         <img class="img-fluid blur-up lazyload product-imghover secondary-img" src="images/products/product-1-1.jpg" data-src="{{ $Product->image2 }}" alt="image" title="image" />
                                                     </a>

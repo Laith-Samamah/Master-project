@@ -37,13 +37,16 @@
                                         <div class="block-item categories">
                                             <h4 class="sub-title">Categories</h4>
                                             <ul class="block-details list sidebar-collections">
+                                                <li class="cat"><a href="/shop">All Products</a>
                                                 @foreach ($mainC as $main )
-                                                <li class="cat-submenu-link"><a href="#;">{{ $main->name }}</a>
+                                                <li class="cat-submenu-link"><a href="#">{{ $main->name }}</a>
                                                     <ul class="cat-submenu-list">
-                                                        <li class="item"><a href="#">Portable Electric</a></li>
-                                                        <li class="item"><a href="#">Gas Hand-Held</a></li>
-                                                        <li class="item"><a href="#">Mega Mixing</a></li>
-                                                        <li class="item more"><a href="#">View More Category</a></li>
+                                                        <li class="item"><a href="/shop?category={{ $main->id }}"> All {{ $main->name }}</a></li>
+                                                        @foreach ( $subC as $sub )
+                                                            @if ($sub->main_category_id==$main->id)
+                                                            <li class="item"><a href="/shop?sCategory={{ $sub->id }}">{{ $sub->name }}</a></li>
+                                                            @endif 
+                                                        @endforeach
                                                     </ul>
                                                 </li>
                                                 @endforeach
@@ -128,7 +131,7 @@
 
                                         </div>
                                         <div class="col-sp col-12 col-sm-4 text-center mb-4 mb-sm-0 order-0 order-sm-1">
-                                            <p class="m-0">Showing 1–# of ## results</p>
+                                            <p class="m-0">Showing {{ count($Products) }} results</p>
                                         </div>
                                         <div class="col-sp col-8 col-sm-4 text-right order-2 order-sm-2">
                                             <div class="filters-item">
@@ -152,6 +155,7 @@
                                 <!-- End Filters Tollbar -->
 
                                 <!-- Start Products Grid -->
+                                
                                 <div class="products products-grid">
                                     <div class="row row-sp row-eq-height">
                                         {{-- first product start --}}
@@ -160,13 +164,13 @@
                                         <div class="col-sp col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                             <div class="product-item">
                                                 <div class="product-image-action">
-                                                    <div class="product-label">
+                                                    {{-- <div class="product-label">
                                                         <span class="label soldout">-20%</span>
                                                         <span class="label new">New</span>
                                                         <span class="label sale">Sale</span>
-                                                    </div>
+                                                    </div> --}}
                                                     <div class="product-image">
-                                                        <a href="product-details.html">
+                                                        <a href="/product/{{ $Product->id }}">
                                                             <img class="img-fluid blur-up lazyload" src="images/products/product-1.jpg" data-src="{{ $Product->image1 }}" alt="image" title="image" />
                                                             <img class="img-fluid blur-up lazyload product-imghover" src="images/products/product-1-1.jpg" data-src="{{ $Product->image2 }}" alt="image" title="image" />
                                                         </a>
@@ -174,9 +178,9 @@
                                                     <div class="product-action">
                                                         <ul>
                                                             <li class="actions-addcart" data-toggle="tooltip" data-placement="top" title="add to cart"><a href="#open-addtocart-popup" class="btn open-addtocart-popup"><i class="icon ti-shopping-cart"></i></a></li>
-                                                            <li class="actions-quickview" data-toggle="tooltip" data-placement="top" title="quick view"><a href="#open-quickview-popup" class="btn open-quickview-popup"><i class="icon ti-zoom-in"></i></a></li>
+                                                            {{-- <li class="actions-quickview" data-toggle="tooltip" data-placement="top" title="quick view"><a href="#open-quickview-popup" class="btn open-quickview-popup"><i class="icon ti-zoom-in"></i></a></li> --}}
                                                             <li class="actions-wishlist" data-toggle="tooltip" data-placement="top" title="add to wishlist"><a href="#open-wishlist-popup" class="btn open-wishlist-popup"><i class="icon ti-heart"></i></a></li>
-                                                            <li class="actions-compare" data-toggle="tooltip" data-placement="top" title="add to compare"><a href="compare.html" class="btn"><i class="icon ti-control-shuffle"></i></a></li>
+                                                            {{-- <li class="actions-compare" data-toggle="tooltip" data-placement="top" title="add to compare"><a href="compare.html" class="btn"><i class="icon ti-control-shuffle"></i></a></li> --}}
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -190,8 +194,9 @@
                                                     <div class="image-swatch-list">
                                                         <ul class="d-flex flex-row justify-content-center align-items-center">
                                                             <li data-toggle="tooltip" data-placement="top" title="xl"><img class="img-fluid" src="{{ $Product->image1 }}" alt="image" title="" /></li>
+                                                            @if ($Product->image2 !== null)
                                                             <li data-toggle="tooltip" data-placement="top" title="x"><img class="img-fluid" src="{{ $Product->image2 }}" alt="image" title="" /></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="s"><img class="img-fluid" src="{{ $Product->image3 }}" alt="image" title="" /></li>
+                                                            @endif
                                                         </ul>
                                                     </div>
                                                 </div>

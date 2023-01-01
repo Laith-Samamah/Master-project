@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -18,7 +19,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [Controller::class, 'index']);
 
-Route::get('/shop', [ProductController::class, 'index']);
+Route::get('/shop', [ProductController::class, 'Home']);
+
+Route::get('/product/{id}', [ProductController::class, 'show']);
+
+Route::get('/signup', [UserController::class, 'signup'])->name('signup');
+
+Route::post('/signupsubmit', [UserController::class, 'signupsubmit']);
+
+Route::get('/login', [UserController::class, 'login'])->name('login');
+
+Route::post('/loginsubmit', [UserController::class, 'loginsubmit']);
+
+Route::get('/logout', [UserController::class, 'logout']);
+
+
 
 Route::get('/about', function () {
     return view('about');
@@ -40,17 +55,15 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/signup', function () {
+//     return view('signup');
+// });
 
-Route::get('/product', function () {
-    return view('product-details');
-});
+
 
 
 Route::get('/wishlist', function () {

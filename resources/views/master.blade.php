@@ -17,9 +17,12 @@
       <!-- Styles CSS -->
       <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
       <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
+      
+      @stack('styles')
     </head>
 
     <body >
         @yield('content')
+        @stack('scripts')
     </body>
 </html>

@@ -15,7 +15,7 @@
                         <h1>My Account</h1>
                         <ul class="breadcrumb bg-transparent m-0 p-0 justify-content-center">
                             <li class="breadcrumb-item"><a href="index.html" title="Home">Home</a></li>
-                            <li class="breadcrumb-item active">My Account</li>
+                            {{-- <li class="breadcrumb-item active">{{ Auth::user()->name }}</li> --}}
                         </ul>
                     </div>
                 </div>

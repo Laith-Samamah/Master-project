@@ -19,8 +19,8 @@ return new class extends Migration
             $table->double('price', 6, 2);
             $table->string('description');
             $table->string('image1');
-            $table->string('image2');
-            $table->string('image3');
+            $table->string('image2')->nullable();
+            $table->string('image3')->nullable();
             $table->foreignId('sub_category_id')->nullable();
             $table->softDeletes();
 

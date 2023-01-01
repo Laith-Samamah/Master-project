@@ -64,7 +64,7 @@
 
                         <!-- Start Contact Form -->
                         <div class="contact-form sections-spacing">
-                            <div class="contact-title mb-5">
+                            <div class="contact-title mb-2">
                                 <h4>Get in Touch!</h4>
                                 <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally. We would be happy to answer your questions.</p>
                             </div>
@@ -110,8 +110,8 @@
                     <!-- Start Contact Maps -->
                     <div class="contact-maps">
                         <div class="container-fluid pl-0 pr-0">
-                            <div class="responsive-map">
-                                <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.31551400776!2d-74.26054636670992!3d40.69714777124596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1549516023553" allowfullscreen=""></iframe>
+                            <div class="responsive-map container align-items-center mb-5">
+                                <iframe src="https://www.google.com/maps/@32.0972738,36.0880978,16.31z" ></iframe>
                             </div>
                         </div>
                     </div>

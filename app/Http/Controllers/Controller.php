@@ -16,7 +16,7 @@ class Controller extends BaseController
 
     public function index()
     {
-        $newProduct = Product::all();
+        $newProduct = Product::orderBy("created_at", "DESC")->limit(6)->get();
         $subCate = SubCategory::all();
         return view('index', ['newProduct' => $newProduct], ['subCate' => $subCate]);
     }

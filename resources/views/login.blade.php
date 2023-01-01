@@ -1,7 +1,10 @@
 @extends('master')
 @section('title', 'Login' )
 @section('content')
-    
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/LoginRegister.css') }}" />
+<link rel="stylesheet" href="{{ asset('fonts/material-icon/css/material-design-iconic-font.min.css') }}" />
+@endpush
 
 <body class="template-login account-page">
 
@@ -22,45 +25,49 @@
                 <!-- End Breadcrumb -->
 
                 <!-- Start Login Account -->
-                <div class="login-account">
-                    <div class="container">
-                        <div class="row row-sp">
-                            <div class="col-sp col-12 col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-                                <div class="page-title text-center">
-                                    <p class="subtitle mb-0">If you have an account with us, log in using your email address.</p>
-                                </div>
-
-                                <form action="#" class="login-form needs-validation" novalidate>
+                <section class="sign-in">
+                    <div class="container containerDiv">
+                        <div class="signin-content">
+                            <div class="signin-image">
+                                <figure><img src="images/others/log.jpg" alt="sing up image"></figure>
+                                <a href="/signup" class="signup-image-link">New customer? create an account.</a>
+                            </div>
+            
+                            <div class="signin-form">
+                                <h2 class="form-title">Sign in</h2>
+                                <form action="/loginsubmit" method="POST" class="register-form" id="login-form">
+                                    @csrf
+                                    @if (session('error'))
+                                        <p class='text-danger'>{{ session('error') }}</p>
+                                    @endif
                                     <div class="form-group">
-                                        <label>Email Address *</label>
-                                        <input type="email" class="form-control" placeholder="" required />
-                                        <div class="invalid-feedback">Please enter your email.</div>
+                                        <label for="email"><i class="zmdi zmdi-email material-icons-email"></i></label>
+                                        <input type="email" name="email" id="email" placeholder="Your email"/>
                                     </div>
                                     <div class="form-group">
-                                        <label>Password *</label>
-                                        <input type="password" class="form-control" placeholder="" required />
-                                        <div class="invalid-feedback">Please enter your password.</div>
+                                        <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                                        <input type="password" name="password" id="password" placeholder="Password"/>
                                     </div>
                                     <div class="form-group">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="dropdownCheck" required />
-                                            <label class="form-check-label ml-3 mb-0" for="dropdownCheck">Remeber Me!</label>
-                                        </div>
+                                        <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                        <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
                                     </div>
-                                    <div class="form-group button-action clearfix text-center">
-                                        <div class="login-forget pull-left">
-                                            <button type="submit" class="btn btn-primary">Sign In</button>
-                                            <a class="forgot-password ml-4" href="forgot-password.html">Forgot your password?</a>
-                                        </div>
-                                        <div class="account-create pull-right">
-                                            <a class="btn btn-secondary" href="/register">Create An Acoount</a>
-                                        </div>
+                                    <div class="form-group form-button">
+                                        <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
                                     </div>
                                 </form>
+                                <div class="social-login">
+                                    <span class="social-label">Or login with</span>
+                                    <ul class="socials">
+                                        <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                        <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                        <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!-- End Login Account -->
             </main>
             <!-- End Main Content -->
