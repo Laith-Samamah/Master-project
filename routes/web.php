@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
@@ -33,15 +34,20 @@ Route::post('/loginsubmit', [UserController::class, 'loginsubmit']);
 
 Route::get('/logout', [UserController::class, 'logout']);
 
+Route::get('/profile', [UserController::class, 'index'])->middleware('auth');
+
+Route::get('/cart', [CartController::class, 'index']);
+
+
 
 
 Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/cart', function () {
-    return view('cart');
-});
+// Route::get('/cart', function () {
+//     return view('cart');
+// });
 
 Route::get('/checkout', function () {
     return view('checkout');
@@ -70,6 +76,6 @@ Route::get('/wishlist', function () {
     return view('wishlist');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+// Route::get('/profile', function () {
+//     return view('profile');
+// });
